@@ -8,11 +8,33 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=7">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <body data-theme="light" class="bg-gray-200">
-	<nav class="h-[60px] bg-green-400 px-5 lg:px-7">
-		<div class="container mx-auto h-full bg-blue-300 flex items-center justify-between relative">
+	<nav class="h-[60px] bg-green-400">
+		<div class="container mx-auto h-full bg-blue-300 flex items-center justify-between relative px-5 lg:px-7">
 			<a class="font-bold text-lg" href="#logos" id="logo">Mikhacu</a>
+
+			<ul class="fixed w-[90vw] h-dvh top-0 right-0 bg-zinc-900 shadow-md shadow-zinc-900 flex flex-col text-zinc-100 lg:flex-row p-4" id="navbar" data-status="close">
+				<div class="p-2 w-full lg:hidden bg-zinc-800 flex items-center justify-between border-b-2 border-zinc-700 mb-5">
+					<a class="font-bold text-lg text-zinc-100 flex items-center gap-4" href="#mikha">
+						<i class="material-symbols-outlined">pets</i>
+						Mikhacu
+					</a>
+					<div class="flex items-center gap-3">
+						<span class="flex items-center justify-center" id="close-nav-button">
+							<i class="material-symbols-outlined pointer-events-none">right_panel_close</i>
+						</span>
+						<span class="flex items-center justify-center" id="darkmode-mobile">
+							<i class="material-symbols-outlined pointer-events-none">brightness_5</i>
+						</span>
+					</div>
+				</div>
+
+				<a class="flex items-center gap-5" href="#home">
+					<i class="material-symbols-outlined">home</i>
+					<span></span>
+				</a>
+			</ul>
 		</div>
 	</nav>
 </body>
